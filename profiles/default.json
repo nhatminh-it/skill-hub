@@ -1,0 +1,6 @@
+{
+  "name": "default",
+  "description": "Base profile applied to all projects",
+  "skills": ["shared/typescript-strict"],
+  "mcps": []
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MCP",
+  "type": "object",
+  "required": ["name", "command"],
+  "properties": {
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "command": { "type": "string" },
+    "args": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "env": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "agents": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Which agents support this MCP. Empty = all."
+    }
+  }
+}

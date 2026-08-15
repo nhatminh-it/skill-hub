@@ -1,0 +1,7 @@
+{
+  "registry": "github:mason/my-skills",
+  "adapters": ["claude", "cursor", "codex"],
+  "profiles": {
+    "default": "profiles/default.json"
+  }
+}

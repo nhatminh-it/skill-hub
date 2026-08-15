@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Skill",
+  "type": "object",
+  "required": ["name", "description", "content"],
+  "properties": {
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "content": { "type": "string" },
+    "agents": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Which agents this applies to. Empty = all agents."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["global", "project"],
+      "default": "global"
+    }
+  }
+}
