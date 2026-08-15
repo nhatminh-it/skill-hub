@@ -1,0 +1,31 @@
+{
+  "name": "@skill-hub/cli",
+  "version": "0.1.0",
+  "description": "SkillHub CLI",
+  "bin": {
+    "skh": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "echo \"no tests yet\""
+  },
+  "dependencies": {
+    "@skill-hub/core": "*",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "gray-matter": "^4.0.3",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}
